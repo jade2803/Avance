@@ -4,48 +4,34 @@ import Datos_Ident from '../components/Datos_Ident.astro';
 import Datos_Solicitante from '../components/Datos_Solicitante.astro';
 import Des from '../components/Des.astro';
 import Actividades from '../components/Actividades.astro';
+import Aprobacion from '../components/Aprobacion.astro';
+import First_Part from '../components/First_Part.astro';
 ---
 
 <Layout title="Formulario de Cambio">
 	<main>
-	  <div class="py-10 px-4 mx-auto text-center mb-8 lg:mb-16">
-		<h2 class="mb-4 text-3xl text-gray-700 tracking-tight font-extrabold">FORMULARIO DE GESTION DE CAMBIO</h2>
+	  <div class="max-w-4xl mx-auto text-center flex justify-center">
+		<h2 class="mb-4 text-3xl text-white tracking-tight font-extrabold p-8">"FORMULARIO DE GESTION DE CAMBIO</h2>
 	  </div>
-	  <div class="container ml-auto mr-auto flex items-center justify-center">
-		<div class="w-full md:w-1/2">
-		  <form class="px-8">
-			<div class="mb-4">
-			  <div class="grid grid-flow-row sm:grid-flow-col gap-3">
-				<div class="sm:col-span-4 justify-center">
-				  <div class="flex mb-4">
-					<div class="w-1/2 pr-2">
-						<label class="block text-gray-700 text-sm font-bold mb-2" for="nya">Solicitud de Cambio</label>
-						<input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-800 leading-tight focus:outline-none focus:shadow-outline dark:bg-gray-200 dark:text-gray-800" id="nya" name="nya" type="text" required>
-					  </div>
-					  <div class="w-1/2 pl-2">
-						<label class="block text-gray-700 text-sm font-bold mb-2" for="codigoSolicitud">Código de Solicitud</label>
-						<input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-800 leading-tight focus:outline-none focus:shadow-outline dark:bg-gray-200 dark:text-gray-800" id="codigoSolicitud" name="codigoSolicitud" type="text" required>
-					  </div>
-				  </div>
-				  <div class="flex mb-4">
-					<div class="w-1/2 pr-2">
-						<label class="block text-gray-700 text-sm font-bold mb-2" for="nya">Versión</label>
-						<input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-800 leading-tight focus:outline-none focus:shadow-outline dark:bg-gray-200 dark:text-gray-800" id="nya" name="nya" type="text" required>
-					  </div>
-					  <div class="w-1/2 pl-2">
-						<label class="block text-gray-700 text-sm font-bold mb-2" for="codigoSolicitud">Fecha</label>
-						<input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-800 
-						leading-tight focus:outline-none focus:shadow-outline dark:bg-gray-200 dark:text-gray-800" 
-						id="codigoSolicitud" name="codigoSolicitud" placeholder="29/10/2023" type="text" required>
-					  </div>
-				  </div>
-				  <Datos_Ident/>
-				  <br/>
-				  <Datos_Solicitante/>
-				  <br/>
-				  <Des/>
-				  <br/>
-				  <Actividades/>
+	  <div class="container mx-auto flex items-center justify-center">
+		<div class="w-full md:w-3/4 lg:w-1/2 bg-white rounded-lg shadow-md p-5">
+		   <section>
+			<First_Part>
+		    <br/>
+		   </section>
+			<form>
+			<Datos_Ident/>
+			<br/>
+			<Datos_Solicitante/>
+			<br/>
+			<Des/>
+			<br/>
+			<Actividades/>
+			<br/>
+			<Aprobacion/>
+			<br/>
+			<div class="mt-6 flex justify-center">
+			  <button class="dark:bg-gray-700 justify-center hover:bg-black text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit">Enviar</button>
 			</div>
 		  </form>
 		</div>
