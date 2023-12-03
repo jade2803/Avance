@@ -6,6 +6,8 @@ import Des from '../components/Des.astro';
 import Aprobacion from '../components/Aprobacion.astro';
 import First_Part from '../components/First_Part.astro';
 import Tabla from '../components/Tabla';
+import Tabla_C from '../components/Tabla_C';
+import Tabla_A from '../components/Tabla_A';
 ---
 
 <Layout title="Formulario de Cambio">
@@ -28,8 +30,16 @@ import Tabla from '../components/Tabla';
 				<br/>
 				<Tabla client:visible/>
 				<br/>
-				<Aprobacion/>
+				<Tabla_C client:visible/>		  
 				<br/>
+				<Aprobacion/>
+				<Tabla_A client:visible/>
+				<br/>
+				<div class="flex justify-center">
+					<button type="submit" class="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded">
+					  Enviar
+					</button>
+				</div>
 			  </form>
 		  </div>	  
 	  </div>
