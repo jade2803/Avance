@@ -1,10 +1,10 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Datos_Ident from '../components/Datos_Ident.astro';
-import Datos_Solicitante from '../components/Datos_Solicitante.astro';
-import Des from '../components/Des.astro';
-import Aprobacion from '../components/Aprobacion.astro';
-import First_Part from '../components/First_Part.astro';
+import Datos_Ident from '../components/DatosIdentificacion.jsx';
+import Datos_Solicitante from '../components/DatosSolicitanteCambio.jsx';
+import DescripcionCambio from '../components/Des.jsx';
+import Aprobacion from '../components/Aprobacion.jsx';
+import First_Part from '../components/First_Part.jsx';
 import Tabla from '../components/Tabla';
 ---
 
@@ -15,16 +15,16 @@ import Tabla from '../components/Tabla';
 	  </div>
 	  <div class="container mx-auto flex items-center justify-center">
 		<div class="w-full md:w-3/4 lg:w-7/12 bg-slate-100 rounded-lg shadow-md p-5">
-			<section>
+			<section class="px-6">
 			  <First_Part>
 				<br/>
 			  </section>
-			  <form>
+			  <form class="px-6">
 				<Datos_Ident/>
 				<br/>
 				<Datos_Solicitante/>
 				<br/>
-				<Des/>
+				<DescripcionCambio/>
 				<br/>
 				<Tabla client:visible/>
 				<br/>
@@ -35,4 +35,4 @@ import Tabla from '../components/Tabla';
 	  </div>
 	</main>
   </Layout>
-  
+  ../components/First_Part.jsx../components/atosIdentificacion.jsx/index.js../components/DatosSolicitanteCambio.jsx/index.js../components/DescripcionCambio.jsx/index.js../components/Des.jsx/index.js../components/Aprobacion.jsx/index.js
