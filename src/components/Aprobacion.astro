@@ -1,19 +1,26 @@
-<h1 class="mb-4 text-gray-700 tracking-tight font-extrabold">Aprobación</h1>
-
 <div class="flex mb-4 items-center">
-    <label class="block text-gray-700 text-sm font-bold mr-8" for="aprovacion">Aprobación de la Solicitud</label>
-    <input type="radio" id="si" name="aprovacion" class="form-radio h-5 w-5 text-blue-600">
-    <span class="ml-2 text-gray-700 mr-6">SI</span>
-    <input type="radio" id="no" name="aprovacion" class="form-radio h-5 w-5 text-blue-600">
-    <span class="ml-2 text-gray-700">NO</span>  
+  <h1 class="mb-4 text-gray-700 tracking-tight font-extrabold">Aprobación de la Solicitud</h1>
+  
+  <label class="block text-gray-700 text-sm mr-8" for="si"></label>
+  <input type="radio" id="si" name="aprobacion" class="form-radio h-5 w-5 ring-white">
+  <span class="ml-2 text-gray-700 mr-6">SI</span>
+  
+  <label class="block text-white text-sm mr-8" for="no"></label>
+  <input type="radio" id="no" name="aprobacion" class="form-radio h-5 w-5">
+  <span class="ml-2 text-gray-700">NO</span>
 </div>
+
+
+
 <div class="sm:col-span-4 justify-center">
-    <label class="block text-gray-700 text-sm font-bold mb-2" for="nya">Fecha</label>
-    <input type="date" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline dark:bg-gray-200 dark:text-gray-800" id="nya" name="nya" type="text" required>
+  <label class="block text-gray-700 text-sm font-bold mr-8" for="fecha"> Fecha de Aprobación</label>
+  <input type="date" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline dark:bg-gray-400 dark:text-gray-800" id="fecha" name="fecha">
 </div>
-<br/>
+
+<br />
+
 <div class="sm:col-span-4 justify-center">
-<table class="min-w-full bg-white border border-gray-300">
+  <table class="min-w-full bg-white border border-gray-300">
     <thead>
       <tr>
         <th class="py-2 px-4 border-b text-gray-700">Cargo</th>
@@ -23,9 +30,15 @@
     </thead>
     <tbody>
       <tr>
-        <td class="py-2 px-4 border-b"><input type="text" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-800 leading-tight focus:outline-none focus:shadow-outline dark:bg-gray-400 dark:text-gray-800" required></td>
-        <td class="py-2 px-4 border-b"><input type="text" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-800 leading-tight focus:outline-none focus:shadow-outline dark:bg-gray-400 dark:text-gray-800" required></td>
-        <td class="py-2 px-4 border-b"><input type="text" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-800 leading-tight focus:outline-none focus:shadow-outline dark:bg-gray-400 dark:text-gray-800" required></td>
+        <td class="py-2 px-4 border-b">
+          <input type="text" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-800 leading-tight focus:outline-none focus:shadow-outline dark:bg-gray-400 dark:text-gray-800">
+        </td>
+        <td class="py-2 px-4 border-b">
+          <input type="text" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-800 leading-tight focus:outline-none focus:shadow-outline dark:bg-gray-400 dark:text-gray-800">
+        </td>
+        <td class="py-2 px-4 border-b">
+          <input type="text" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-800 leading-tight focus:outline-none focus:shadow-outline dark:bg-gray-400 dark:text-gray-800">
+        </td>
       </tr>
     </tbody>
   </table>

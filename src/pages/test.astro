@@ -1,59 +1,23 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Datos_Ident from '../components/Datos_Ident.astro';
-import Datos_Solicitante from '../components/Datos_Solicitante.astro';
-import Des from '../components/Des.astro';
-import Actividades from '../components/Actividades.astro';
-import Aprobacion from '../components/Aprobacion.astro';
+import Tabla from "../components/Tabla.jsx";
+
 ---
 
-<Layout title="Formulario de Cambio">
-	<main>
-		<div class="py-10 px-4 mx-auto text-center mb-8 lg:mb-16 mt-8">
-			<h2 class="mb-4 text-3xl text-gray-700 tracking-tight font-extrabold">FORMULARIO DE GESTION DE CAMBIO</h2>
-		</div>
-	  <div class="container ml-auto mr-auto flex items-center justify-center">
-		<div class="w-full md:w-1/2">
-		  <form class="px-8">
-			<div class="mb-4">
-			  <div class="grid grid-flow-row sm:grid-flow-col gap-3">
-				<div class="sm:col-span-4 justify-center">
-				  <div class="flex mb-4">
-					<div class="w-1/2 pr-2">
-						<label class="block text-gray-700 text-sm font-bold mb-2" for="nya">Solicitud de Cambio</label>
-						<input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-800 leading-tight focus:outline-none focus:shadow-outline dark:bg-gray-200 dark:text-gray-800" id="nya" name="nya" type="text" required>
-					  </div>
-					  <div class="w-1/2 pl-2">
-						<label class="block text-gray-700 text-sm font-bold mb-2" for="codigoSolicitud">Código de Solicitud</label>
-						<input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-800 leading-tight focus:outline-none focus:shadow-outline dark:bg-gray-200 dark:text-gray-800" id="codigoSolicitud" name="codigoSolicitud" type="text" required>
-					  </div>
-				  </div>
-				  <div class="flex mb-4">
-					<div class="w-1/2 pr-2">
-						<label class="block text-gray-700 text-sm font-bold mb-2" for="nya">Versión</label>
-						<input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-800 leading-tight focus:outline-none focus:shadow-outline dark:bg-gray-200 dark:text-gray-800" id="nya" name="nya" type="text" required>
-					  </div>
-					  <div class="w-1/2 pl-2">
-						<label class="block text-gray-700 text-sm font-bold mb-2" for="fecha">Fecha</label>
-						<input type="date" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline dark:bg-gray-200 dark:text-gray-800" id="nya" name="nya" type="text" required>
-					  </div>
-				  </div>
-				  <Datos_Ident/>
-				  <br/>
-				  <Datos_Solicitante/>
-				  <br/>
-				  <Des/>
-				  <br/>
-				  <Actividades/>
-				  <br/>
-				  <Aprobacion/>
-				</div>
-			  </div>
-			</div>
-		  </form>
-		</div>
-	  </div>
-	</main>
-  </Layout>
-  
-  
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+  <title>Actividades</title>
+  <style>
+    /* Agrega tus estilos personalizados aquí si es necesario */
+  </style>
+</head>
+<body class="bg-gray-100 placeholder">
+<div class="px-100px">
+  <Tabla client:visible></Tabla>
+</div>
+
+</body>
+</html>

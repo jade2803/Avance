@@ -3,9 +3,9 @@ import Layout from '../layouts/Layout.astro';
 import Datos_Ident from '../components/Datos_Ident.astro';
 import Datos_Solicitante from '../components/Datos_Solicitante.astro';
 import Des from '../components/Des.astro';
-import Actividades from '../components/Actividades.astro';
 import Aprobacion from '../components/Aprobacion.astro';
 import First_Part from '../components/First_Part.astro';
+import Tabla from '../components/Tabla';
 ---
 
 <Layout title="Formulario de Cambio">
@@ -14,27 +14,24 @@ import First_Part from '../components/First_Part.astro';
 		<h2 class="mb-4 text-3xl text-white tracking-tight font-extrabold p-8">"FORMULARIO DE GESTION DE CAMBIO</h2>
 	  </div>
 	  <div class="container mx-auto flex items-center justify-center">
-		<div class="w-full md:w-3/4 lg:w-1/2 bg-white rounded-lg shadow-md p-5">
-		   <section>
-			<First_Part>
-		    <br/>
-		   </section>
-			<form>
-			<Datos_Ident/>
-			<br/>
-			<Datos_Solicitante/>
-			<br/>
-			<Des/>
-			<br/>
-			<Actividades/>
-			<br/>
-			<Aprobacion/>
-			<br/>
-			<div class="mt-6 flex justify-center">
-			  <button class="dark:bg-gray-700 justify-center hover:bg-black text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit">Enviar</button>
-			</div>
-		  </form>
-		</div>
+		<div class="w-full md:w-3/4 lg:w-7/12 bg-slate-100 rounded-lg shadow-md p-5">
+			<section>
+			  <First_Part>
+				<br/>
+			  </section>
+			  <form>
+				<Datos_Ident/>
+				<br/>
+				<Datos_Solicitante/>
+				<br/>
+				<Des/>
+				<br/>
+				<Tabla client:visible/>
+				<br/>
+				<Aprobacion/>
+				<br/>
+			  </form>
+		  </div>	  
 	  </div>
 	</main>
   </Layout>
